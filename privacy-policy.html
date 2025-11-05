@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ailem Anı - Gizlilik Sözleşmesi">
+    <title>Gizlilik Sözleşmesi - Ailem Anı</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #fbfbfb;
+            padding: 20px;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        
+        h1 {
+            color: #10B981;
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #10B981;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #10B981;
+        }
+        
+        h3 {
+            color: #333;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 12px;
+            color: #555;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        .highlight-box {
+            background: #f0f9ff;
+            border: 2px solid #10B981;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .highlight-box h3 {
+            color: #10B981;
+            margin-top: 0;
+        }
+        
+        .highlight-box ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .highlight-box li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .highlight-box li:before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        .update-date {
+            background: #f5f5f5;
+            padding: 16px;
+            border-radius: 8px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .update-date p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .update-date p + p {
+            margin-top: 10px;
+            font-size: 13px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔒 Gizlilik Sözleşmesi</h1>
+        <p class="subtitle">Ailem Anı - Verilerinizin nasıl korunduğu</p>
+        
+        <div class="highlight-box">
+            <h3>📋 Özet: Güvenli ve Şeffaf</h3>
+            <ul>
+                <li><strong>Hiçbir veri uygulama sunucularında saklanmaz</strong> - Tüm veriler sizin seçtiğiniz bulut depolama hizmetinde</li>
+                <li><strong>Üçüncü tarafla veri paylaşımı yok</strong> - Reklam, analiz veya pazarlama amaçlı servisler kullanılmaz</li>
+                <li><strong>Tam kontrol sizde</strong> - Verilerinizi istediğiniz zaman görüntüleyebilir, düzenleyebilir veya silebilirsiniz</li>
+                <li><strong>Şifreleme ve güvenlik</strong> - Tüm veri aktarımı HTTPS ile şifrelenir</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>1. Genel Bilgiler</h2>
+            <h3>1.1. Uygulama Hakkında</h3>
+            <p>Ailem Anı uygulaması, aile anılarınızı (fotoğraflar, açıklamalar, tarihler) güvenli bir şekilde saklamanıza ve yönetmenize yardımcı olan bir mobil uygulamadır.</p>
+            <p>Uygulama, kullanıcıların kendi bulut depolama hesaplarına (Google Drive, OneDrive veya Firebase) erişmelerini sağlayan bir arayüz görevi görür.</p>
+            <p><strong>Önemli:</strong> Uygulama herhangi bir sunucu üzerinde veri saklamaz veya işlemez. Tüm veriler kullanıcının seçtiği bulut depolama hizmetinde saklanır.</p>
+        </div>
+        
+        <div class="section">
+            <h2>2. Toplanan Veriler</h2>
+            <h3>2.1. Veri Türleri</h3>
+            <ul>
+                <li><strong>E-posta Adresi:</strong> Firebase kimlik doğrulaması için kullanılır</li>
+                <li><strong>Kimlik Doğrulama Token'ları:</strong> Cihazınızda güvenli şekilde saklanır</li>
+                <li><strong>Anı Metadata'ları:</strong> Başlık, açıklama, tarih (sadece cihazınızda)</li>
+                <li><strong>Fotoğraflar:</strong> Anılarla ilişkili fotoğraflar (doğrudan bulut depolama hizmetinize yüklenir)</li>
+                <li><strong>Uygulama Ayarları:</strong> Tema, bildirim tercihleri vb. (cihazınızda)</li>
+            </ul>
+            
+            <h3>2.2. Toplanmayan Veriler</h3>
+            <ul>
+                <li>Konum bilgisi</li>
+                <li>Kişisel kimlik bilgileri</li>
+                <li>Cihaz bilgileri (IMEI, seri numarası vb.)</li>
+                <li>Kullanıcı davranış analizi</li>
+                <li>Reklam/pazarlama verileri</li>
+                <li>Çerez veya izleme teknolojileri kullanılmaz</li>
+            </ul>
+            
+            <h3>2.3. Veri Toplama Yöntemi</h3>
+            <p>Veriler sadece siz tarafından uygulama içinde girilir. Hiçbir otomatik veri toplama veya izleme yapılmaz.</p>
+        </div>
+        
+        <div class="section">
+            <h2>3. Veri Saklama</h2>
+            <h3>3.1. Veri Lokasyonu</h3>
+            <ul>
+                <li><strong>Yerel:</strong> Anı metadata'ları ve ayarlar cihazınızda saklanır</li>
+                <li><strong>Bulut:</strong> Fotoğraflar seçtiğiniz bulut depolama hizmetinde (Google Drive/OneDrive/Firebase) saklanır</li>
+                <li><strong>Uygulama Sunucuları:</strong> Uygulamanın kendi sunucuları yoktur. Hiçbir veri uygulama geliştiricisinin sunucularında saklanmaz.</li>
+            </ul>
+            
+            <h3>3.2. Veri Saklama Süresi</h3>
+            <ul>
+                <li>Verileriniz, hesabınızı sildiğiniz veya uygulamayı kaldırdığınız ana kadar saklanır</li>
+                <li>Hesabınızı sildiğinizde, yerel veriler otomatik olarak silinir</li>
+                <li>Bulut depolama hizmetinizdeki verileri manuel olarak silmeniz gerekebilir</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>4. Güvenlik</h2>
+            <h3>4.1. Veri Güvenliği</h3>
+            <ul>
+                <li>Tüm veri aktarımı HTTPS (SSL/TLS) şifreleme ile gerçekleşir</li>
+                <li>Kimlik doğrulama, güvenli OAuth2 protokolü ile yapılır</li>
+                <li>Verilerinize sadece siz ve sizin yetkilendirdiğiniz bulut depolama hesabınız erişebilir</li>
+                <li>Uygulama geliştiricileri verilerinize erişemez</li>
+            </ul>
+            
+            <h3>4.2. Erişim Kontrolü</h3>
+            <p>Verilerinize sadece siz ve sizin yetkilendirdiğiniz bulut depolama hesabınız erişebilir. Uygulama geliştiricileri verilerinize erişemez.</p>
+        </div>
+        
+        <div class="section">
+            <h2>5. Kullanıcı Hakları</h2>
+            <h3>5.1. Erişim ve Düzenleme</h3>
+            <ul>
+                <li><strong>Verilerinize Erişim:</strong> İstediğiniz zaman erişebilir ve dışa aktarabilirsiniz</li>
+                <li><strong>Veri Düzeltme:</strong> Anılarınızı istediğiniz zaman düzenleyebilirsiniz</li>
+                <li><strong>Veri Silme:</strong> Hesabınızı ve tüm verilerinizi istediğiniz zaman silebilirsiniz</li>
+            </ul>
+            
+            <h3>5.2. Hesap Silme</h3>
+            <ul>
+                <li>Hesabınızı ve tüm verilerinizi istediğiniz zaman silebilirsiniz (Ayarlar > Hesabı Sil)</li>
+                <li>Hesap silindiğinde: Firebase'deki tüm anılar ve fotoğraflar kalıcı olarak silinir</li>
+                <li>Yerel veriler otomatik olarak silinir</li>
+                <li><strong>Uyarı:</strong> Hesap silme işlemi geri alınamaz!</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>6. Üçüncü Taraf Hizmetler</h2>
+            <h3>6.1. Kullanılan Hizmetler</h3>
+            <ul>
+                <li><strong>Google Drive:</strong> Fotoğrafların saklanması için (isteğe bağlı). İlgili şirketlerin gizlilik politikaları geçerlidir.</li>
+                <li><strong>OneDrive:</strong> Fotoğrafların saklanması için (isteğe bağlı). İlgili şirketlerin gizlilik politikaları geçerlidir.</li>
+                <li><strong>Firebase:</strong> Kimlik doğrulama ve veri saklama için. Google'ın gizlilik politikası geçerlidir.</li>
+            </ul>
+            <p><strong>Önemli:</strong> Reklam, analiz veya pazarlama amaçlı servisler kullanılmaz.</p>
+        </div>
+        
+        <div class="section">
+            <h2>7. Çerezler ve İzleme</h2>
+            <ul>
+                <li>Uygulama çerez (cookie) kullanmaz</li>
+                <li>İzleme veya analiz için teknolojiler kullanılmaz</li>
+                <li>Kullanıcı davranışı takibi yapılmaz</li>
+                <li>Uygulama tercihleriniz sadece cihazınızda saklanır ve kimlik belirleme amacıyla kullanılmaz</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>8. Yasal Bilgiler</h2>
+            <h3>8.1. Yasal Çerçeve</h3>
+            <ul>
+                <li>Bu gizlilik sözleşmesi Türkiye Cumhuriyeti yasalarına tabidir</li>
+                <li>Kişisel Verilerin Korunması Kanunu (KVKK) ve GDPR uyumludur</li>
+                <li>KVKK kapsamında sahip olduğunuz tüm haklar geçerlidir</li>
+            </ul>
+            
+            <h3>8.2. Çocukların Gizliliği</h3>
+            <ul>
+                <li>Uygulama 13 yaş altı çocuklardan bilerek veri toplamaz</li>
+                <li>13-18 yaş arası kullanıcılar ebeveyn izni ile kullanabilir</li>
+            </ul>
+            
+            <h3>8.3. Değişiklikler</h3>
+            <ul>
+                <li>Bu sözleşme yasal gereklilikler veya uygulama güncellemeleri nedeniyle değiştirilebilir</li>
+                <li>Önemli değişiklikler kullanıcılara bildirilir</li>
+                <li>Güncel sözleşme her zaman uygulama içinde görüntülenebilir</li>
+            </ul>
+        </div>
+        
+        <div class="update-date">
+            <p><strong>Son Güncelleme:</strong> 05 Kasım 2025</p>
+            <p>
+                Bu gizlilik sözleşmesi, Ailem Anı uygulamasının resmi gizlilik politikasıdır.
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Ailem Anı. Tüm hakları saklıdır.</p>
+        </div>
+    </div>
+</body>
+</html>
+
